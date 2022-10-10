@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+
+spring:
+    datasource:
+        hikari:
+            connection-timeout: 20000
+            maximumPoolSize: 5
+        url: jdbc:postgresql://182.31.153.5:5500/postgres
+        username: postgres
+        password: post_1!
+
+
+mybatis:
+  type-aliases-package: com.restapi.demo.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+logging:
+  level:
+    root: INFO
+    '[com.restapi]': DEBUG
+
+        
