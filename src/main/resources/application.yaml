@@ -15,7 +15,7 @@ spring:
 
 
 mybatis:
-  type-aliases-package: com.restapi.demo.domain
+  type-aliases-package: com.restapi.domain
   configuration:
     map-underscore-to-camel-case: true
 

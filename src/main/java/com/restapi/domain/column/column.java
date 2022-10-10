@@ -1,4 +1,4 @@
-package com.restapi.demo.domain.column;
+package com.restapi.domain.column;
 
 import lombok.Data;
 

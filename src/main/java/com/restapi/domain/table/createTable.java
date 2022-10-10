@@ -1,8 +1,8 @@
-package com.restapi.demo.domain.table;
+package com.restapi.domain.table;
 
 import java.util.List;
 
-import com.restapi.demo.domain.column.column;
+import com.restapi.domain.column.column;
 
 import lombok.Data;
 

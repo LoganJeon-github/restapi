@@ -1,20 +1,16 @@
-package com.restapi.demo.service.impl;
+package com.restapi.service.impl;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.restapi.demo.domain.column.column;
-import com.restapi.demo.mapper.TableMapper;
-import com.restapi.demo.service.firstService;
+import com.restapi.service.firstService;
 
 @Service
 public class firstServiceImpl implements firstService {
     @Autowired
-    private TableMapper tableMapper;
 
     @Override
     public Map<String, Object> getFirstData() {
@@ -25,11 +21,4 @@ public class firstServiceImpl implements firstService {
         return firstData;
     }
 
-    @Override
-    public void createTable(String tableName, 
-                            List<column> columns, 
-                            String comment) {
-        // TODO Auto-generated method stub
-        tableMapper.createTable(tableName, columns, comment);
-    }
 }
